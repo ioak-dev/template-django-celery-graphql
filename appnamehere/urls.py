@@ -22,9 +22,8 @@ from . import views
 urlpatterns = [
     path('task/<str:task_id>/status', views.get_status),
     path('task/<str:task_id>/result', views.get_result),
-    path('admin/<str:space>/', admin.site.urls),
-    path('auth/<str:space>/', include('app.auth.urls')),
-    path('space/', include('app.space.urls')),
-    path('faq/<str:space>/', include('app.faq.urls')),
-    path('user/<str:space>/', include('app.user.urls'))
+    path('admin/<str:tenant>/', admin.site.urls),
+    path('auth/<str:tenant>/', include('app.auth.urls')),
+    path('tenant/', include('app.tenant.urls')),
+    path('user/<str:tenant>/', include('app.user.urls'))
 ]
