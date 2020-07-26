@@ -4,13 +4,13 @@
 
 - pip install virtualenv
 - pip install virtualenvwrapper-win
+- mkvirtualenv appnamehere
 - pip install -r requirements.txt
-- mkvirtualenv <some name for the environment> (eg: mkvirtualenv local)
 - python manage.py runserver
 
 ## Every time
 
-- workon <environment name> (eg: workon local)
+- workon appnamehere
 - python manage.py runserver
 
 ## Procfile Honcho for celery
